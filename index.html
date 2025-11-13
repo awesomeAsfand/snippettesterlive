@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Snippet Tester — SEO Snippet A/B Testing for CTR</title>
+  <meta name="description" content="A/B test your SEO titles & meta descriptions. Schedule variant runs, auto-rotate, and track CTR from Google Search Console—no page builders required.">
+  <meta name="keywords" content="SEO, A/B testing, CTR, Google Search Console, title test, meta description test, snippet test">
+  <!-- Keep your existing verification -->
+  <meta name="google-site-verification" content="J5ChP3nMOywmgqrS0qre585CrNZFOzRJdC1esNOWgoc" />
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Poppins:wght@300;400;500;600;700;800;900&family=Nunito:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+</head>
+
+<body class="index-page">
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+      <a href="/" class="logo d-flex align-items-center me-auto me-xl-0">
+        <h1 class="sitename">Snippet&nbsp;Tester</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active">Home</a></li>
+          <li><a href="#how">How it works</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <!-- Wire these to your Django routes -->
+      <div class="d-flex gap-2">
+        <a class="btn btn-outline-secondary" href="/accounts/login/">Log in</a>
+        <a class="btn-getstarted" href="/accounts/signup/">Start Free</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <!-- Hero Section -->
+    <section id="hero" class="hero section">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row justify-content-center">
+          <div class="col-lg-9" data-aos="zoom-in" data-aos-delay="200">
+            <div class="hero-content text-center">
+              <div class="hero-badge" data-aos="fade-down" data-aos-delay="250">
+                <i class="bi bi-graph-up-arrow"></i>
+                <span>Boost organic CTR with A/B tests</span>
+              </div>
+              <h1 class="hero-title" data-aos="fade-up" data-aos-delay="300">
+                A/B Test Your SEO Titles & Meta Descriptions
+              </h1>
+              <p class="hero-description" data-aos="fade-up" data-aos-delay="350">
+                Create variants, schedule runs, and track daily impressions, clicks, CTR and position directly from Google Search Console. No code changes to your layout required.
+              </p>
+              <div class="hero-actions" data-aos="fade-up" data-aos-delay="400">
+                <a href="/accounts/signup/" class="btn-primary">Start Free</a>
+                <a href="#how" class="btn-outline">See how it works</a>
+              </div>
+
+              <div class="hero-metrics" data-aos="fade-up" data-aos-delay="500">
+                <div class="metric-item">
+                  <div class="metric-icon"><i class="bi bi-rocket-takeoff"></i></div>
+                  <div class="metric-content">
+                    <span class="metric-number">14-day</span>
+                    <span class="metric-label">default run</span>
+                  </div>
+                </div>
+                <div class="metric-item">
+                  <div class="metric-icon"><i class="bi bi-hdd-network"></i></div>
+                  <div class="metric-content">
+                    <span class="metric-number">GSC</span>
+                    <span class="metric-label">native sync</span>
+                  </div>
+                </div>
+                <div class="metric-item">
+                  <div class="metric-icon"><i class="bi bi-shield-check"></i></div>
+                  <div class="metric-content">
+                    <span class="metric-number">No overlap</span>
+                    <span class="metric-label">guarantee</span>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How it works -->
+    <section id="how" class="features section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>How it works</h2>
+        <p>From connection to insights in five minutes.</p>
+      </div>
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row align-items-center gy-4">
+          <div class="col-lg-6">
+            <ol class="list-group list-group-numbered shadow-sm">
+              <li class="list-group-item py-3">
+                <strong>Connect your Google Search Console property</strong> — we pull verified metrics securely.
+              </li>
+              <li class="list-group-item py-3">
+                <strong>Add a Page</strong> — paste the canonical URL you want to optimize.
+              </li>
+              <li class="list-group-item py-3">
+                <strong>Create Snippet Variants (A/B/C)</strong> — titles & meta descriptions.
+              </li>
+              <li class="list-group-item py-3">
+                <strong>Schedule Variant Runs</strong> — set start dates and durations (no overlaps).
+              </li>
+              <li class="list-group-item py-3">
+                <strong>Track Daily Results</strong> — impressions, clicks, CTR, position per run.
+              </li>
+            </ol>
+            <div class="mt-4 d-flex gap-2">
+              <a href="/accounts/signup/" class="btn btn-primary">Start Free</a>
+              <a href="/dashboard/" class="btn btn-outline-secondary">View Demo Dashboard</a>
+            </div>
+          </div>
+          <div class="col-lg-6" data-aos="fade-left" data-aos-delay="150">
+            <img src="assets/img/features/features-4.webp" alt="Dashboard preview" class="img-fluid rounded shadow-sm">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Product Features -->
+<!-- Features Section (Simplified) -->
+<section id="features" class="features section">
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Features</h2>
+    <p>Everything you need to A/B test SEO snippets—nothing you don’t.</p>
+  </div>
+
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+    <div class="row g-4">
+
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="feature-item h-100 p-4 border rounded-3">
+          <div class="feature-icon mb-2"><i class="bi bi-diagram-3"></i></div>
+          <h4 class="mb-1">Clean Model</h4>
+          <p class="mb-0 text-muted">Page → Test → Variant → Run. Easy to reason about, easy to manage.</p>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="feature-item h-100 p-4 border rounded-3">
+          <div class="feature-icon mb-2"><i class="bi bi-clock-history"></i></div>
+          <h4 class="mb-1">Auto Scheduling</h4>
+          <p class="mb-0 text-muted">Generate A→B→C sequences with default 14-day windows—or set your own.</p>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="feature-item h-100 p-4 border rounded-3">
+          <div class="feature-icon mb-2"><i class="bi bi-google"></i></div>
+          <h4 class="mb-1">GSC Sync</h4>
+          <p class="mb-0 text-muted">Daily impressions, clicks, CTR & position—pulled straight from Search Console.</p>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="feature-item h-100 p-4 border rounded-3">
+          <div class="feature-icon mb-2"><i class="bi bi-intersect"></i></div>
+          <h4 class="mb-1">No Overlaps</h4>
+          <p class="mb-0 text-muted">Built-in validation prevents clashing run windows (planned vs actual).</p>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="feature-item h-100 p-4 border rounded-3">
+          <div class="feature-icon mb-2"><i class="bi bi-bar-chart-line"></i></div>
+          <h4 class="mb-1">Actionable Reports</h4>
+          <p class="mb-0 text-muted">Compare variants by CTR & position. Export CSV for clients or deep dives.</p>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="feature-item h-100 p-4 border rounded-3">
+          <div class="feature-icon mb-2"><i class="bi bi-plugin"></i></div>
+          <h4 class="mb-1">CMS-Friendly</h4>
+          <p class="mb-0 text-muted">Works alongside WordPress, Webflow, or headless—no theme rebuilds.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Small reassurance strip -->
+    <div class="row mt-4">
+      <div class="col">
+        <div class="d-flex flex-wrap gap-2">
+          <span class="badge rounded-pill bg-light text-dark border">Read-only GSC access</span>
+          <span class="badge rounded-pill bg-light text-dark border">Fast setup</span>
+          <span class="badge rounded-pill bg-light text-dark border">Solo-founder friendly</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- Pricing -->
+    <section id="pricing" class="pricing section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Pricing</h2>
+        <p>Simple plans that scale with your sites.</p>
+      </div>
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row gy-4">
+          <div class="col-lg-4 col-md-6">
+            <div class="pricing-card h-100">
+              <div class="plan-header">
+                <div class="plan-icon"><i class="bi bi-box"></i></div>
+                <h3>Starter</h3>
+                <p>For solo sites</p>
+              </div>
+              <div class="plan-pricing">
+                <div class="price">
+                  <span class="currency">$</span><span class="amount">0</span><span class="period">/mo</span>
+                </div>
+              </div>
+              <div class="plan-features">
+                <ul>
+                  <li><i class="bi bi-check-circle-fill"></i> 1 property</li>
+                  <li><i class="bi bi-check-circle-fill"></i> 1 active test</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Daily GSC sync</li>
+                  <li class="disabled"><i class="bi bi-x-circle-fill"></i> CSV export</li>
+                  <li class="disabled"><i class="bi bi-x-circle-fill"></i> Team seats</li>
+                </ul>
+              </div>
+              <div class="plan-cta">
+                <a href="/accounts/signup/" class="btn-plan">Start Free</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="pricing-card popular h-100">
+              <div class="popular-tag">Most Popular</div>
+              <div class="plan-header">
+                <div class="plan-icon"><i class="bi bi-briefcase"></i></div>
+                <h3>Pro</h3>
+                <p>For growing sites & agencies</p>
+              </div>
+              <div class="plan-pricing">
+                <div class="price">
+                  <span class="currency">$</span><span class="amount">19</span><span class="period">/mo</span>
+                </div>
+              </div>
+              <div class="plan-features">
+                <ul>
+                  <li><i class="bi bi-check-circle-fill"></i> 3 properties</li>
+                  <li><i class="bi bi-check-circle-fill"></i> 10 active tests</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Auto scheduling</li>
+                  <li><i class="bi bi-check-circle-fill"></i> CSV export</li>
+                  <li class="disabled"><i class="bi bi-x-circle-fill"></i> Multi-user</li>
+                </ul>
+              </div>
+              <div class="plan-cta">
+                <a href="/accounts/signup/" class="btn-plan">Try Pro</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="pricing-card h-100">
+              <div class="plan-header">
+                <div class="plan-icon"><i class="bi bi-building"></i></div>
+                <h3>Agency</h3>
+                <p>For client work</p>
+              </div>
+              <div class="plan-pricing">
+                <div class="price">
+                  <span class="currency">$</span><span class="amount">79</span><span class="period">/mo</span>
+                </div>
+              </div>
+              <div class="plan-features">
+                <ul>
+                  <li><i class="bi bi-check-circle-fill"></i> 10 properties</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Unlimited tests</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Team seats</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Client-ready reports</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Priority support</li>
+                </ul>
+              </div>
+              <div class="plan-cta">
+                <a href="/accounts/signup/" class="btn-plan">Get Agency</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="faq section">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+            <div class="faq-container">
+              <div class="faq-item" data-aos="fade-up" data-aos-delay="150">
+                <div class="question-wrapper">
+                  <div class="icon-wrapper"><i class="bi bi-patch-question"></i></div>
+                  <div class="content-wrapper">
+                    <h3 class="question">Do I need to install anything on my site?</h3>
+                    <div class="answer">
+                      <p>No. We read performance data from Google Search Console and you update titles/descriptions in your CMS as you rotate variants.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="faq-item" data-aos="fade-up" data-aos-delay="200">
+                <div class="question-wrapper">
+                  <div class="icon-wrapper"><i class="bi bi-patch-question"></i></div>
+                  <div class="content-wrapper">
+                    <h3 class="question">How do runs avoid overlapping?</h3>
+                    <div class="answer">
+                      <p>Our scheduler enforces non-overlapping planned/actual windows per test. If dates collide, you’ll be asked to adjust before saving.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="faq-item" data-aos="fade-up" data-aos-delay="250">
+                <div class="question-wrapper">
+                  <div class="icon-wrapper"><i class="bi bi-patch-question"></i></div>
+                  <div class="content-wrapper">
+                    <h3 class="question">Which metrics are tracked?</h3>
+                    <div class="answer">
+                      <p>Daily impressions, clicks, CTR and average position by variant run window—exactly as reported by GSC.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
+                <div class="question-wrapper">
+                  <div class="icon-wrapper"><i class="bi bi-patch-question"></i></div>
+                  <div class="content-wrapper">
+                    <h3 class="question">What’s a good default duration?</h3>
+                    <div class="answer">
+                      <p>We default to 14 days per variant, but you can set any duration per test or per variant depending on traffic.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="faq-item" data-aos="fade-up" data-aos-delay="350">
+                <div class="question-wrapper">
+                  <div class="icon-wrapper"><i class="bi bi-patch-question"></i></div>
+                  <div class="content-wrapper">
+                    <h3 class="question">Can I export results?</h3>
+                    <div class="answer">
+                      <p>Yes—CSV export is available on Pro and Agency plans for client reporting or deeper analysis.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div> <!-- /faq-container -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact CTA -->
+    <section id="contact" class="contact section light-background">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Ready to boost CTR?</h2>
+        <p>Connect your property and set up your first A/B test today.</p>
+      </div>
+      <div class="container text-center" data-aos="fade-up" data-aos-delay="150">
+        <a class="btn btn-primary btn-lg" href="/accounts/signup/">Start Free</a>
+        <a class="btn btn-outline-secondary btn-lg ms-2" href="/dashboard/">View Demo</a>
+      </div>
+    </section>
+  </main>
+
+  <footer id="footer" class="footer position-relative light-background">
+    <div class="container">
+      <div class="footer-main" data-aos="fade-up" data-aos-delay="100">
+        <div class="row align-items-start">
+          <div class="col-lg-5">
+            <div class="brand-section">
+              <a href="/" class="logo d-flex align-items-center mb-4">
+                <span class="sitename">Snippet&nbsp;Tester</span>
+              </a>
+              <p class="brand-description">A/B test your SEO snippets and make evidence-based changes using real GSC data.</p>
+              <div class="contact-info mt-4">
+                <div class="contact-item"><i class="bi bi-envelope"></i><span>hello@snippetter.io</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-7">
+            <div class="footer-nav-wrapper">
+              <div class="row">
+                <div class="col-6 col-lg-3">
+                  <div class="nav-column">
+                    <h6>Product</h6>
+                    <nav class="footer-nav">
+                      <a href="#how">How it works</a>
+                      <a href="#features">Features</a>
+                      <a href="#pricing">Pricing</a>
+                      <a href="/changelog/">Changelog</a>
+                    </nav>
+                  </div>
+                </div>
+                <div class="col-6 col-lg-3">
+                  <div class="nav-column">
+                    <h6>Resources</h6>
+                    <nav class="footer-nav">
+                      <a href="/docs/">Docs</a>
+                      <a href="/blog/">Blog</a>
+                      <a href="/guides/">Guides</a>
+                      <a href="/support/">Support</a>
+                    </nav>
+                  </div>
+                </div>
+                <div class="col-6 col-lg-3">
+                  <div class="nav-column">
+                    <h6>Company</h6>
+                    <nav class="footer-nav">
+                      <a href="/about/">About</a>
+                      <a href="/contact/">Contact</a>
+                      <a href="/legal/privacy/">Privacy</a>
+                      <a href="/legal/terms/">Terms</a>
+                    </nav>
+                  </div>
+                </div>
+                <div class="col-6 col-lg-3">
+                  <div class="nav-column">
+                    <h6>Account</h6>
+                    <nav class="footer-nav">
+                      <a href="/accounts/login/">Log in</a>
+                      <a href="/accounts/signup/">Create account</a>
+                      <a href="/dashboard/">Dashboard</a>
+                    </nav>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> <!-- /col -->
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="container">
+          <div class="bottom-content" data-aos="fade-up" data-aos-delay="200">
+            <div class="row align-items-center">
+              <div class="col-lg-6">
+                <div class="copyright">
+                  <p>© <span class="sitename">Snippet&nbsp;Tester</span>. All rights reserved.</p>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="legal-links">
+                  <a href="/legal/privacy/">Privacy Policy</a>
+                  <a href="/legal/terms/">Terms of Service</a>
+                  <div class="credits">Built with ❤️ by a solo founder.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> <!-- /footer-bottom -->
+    </div>
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
