@@ -1,0 +1,14 @@
+<svg width="600" height="360" viewBox="0 0 600 360" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="600" height="360" rx="24" fill="#EEF3FF"/>
+  <rect x="64" y="88" width="472" height="184" rx="18" fill="#FFFFFF" stroke="#CBD3FF" stroke-width="4"/>
+  <rect x="108" y="124" width="220" height="28" rx="14" fill="#0B1AE9" opacity="0.08"/>
+  <rect x="108" y="164" width="360" height="16" rx="8" fill="#0B1AE9" opacity="0.12"/>
+  <rect x="108" y="188" width="300" height="16" rx="8" fill="#0B1AE9" opacity="0.12"/>
+  <path d="M164 240C186 208 210 220 226 232C246 247 266 242 286 220C302 202 322 194 346 220C368 244 388 244 404 220" stroke="#0B1AE9" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" opacity="0.65"/>
+  <circle cx="172" cy="242" r="10" fill="#0B1AE9" opacity="0.5"/>
+  <circle cx="230" cy="236" r="10" fill="#0B1AE9" opacity="0.5"/>
+  <circle cx="288" cy="222" r="10" fill="#0B1AE9" opacity="0.5"/>
+  <circle cx="346" cy="230" r="10" fill="#0B1AE9" opacity="0.5"/>
+  <circle cx="404" cy="214" r="10" fill="#0B1AE9" opacity="0.5"/>
+  <text x="108" y="112" fill="#0B1AE9" font-family="Nunito, Arial" font-size="20" font-weight="700">Review performance insights</text>
+</svg>
