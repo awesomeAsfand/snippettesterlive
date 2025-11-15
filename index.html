@@ -41,6 +41,7 @@
           <li><a href="#hero" class="active">Home</a></li>
           <li><a href="#how">How it works</a></li>
           <li><a href="#features">Features</a></li>
+          <li><a href="#roadmap">Roadmap</a></li>
           <li><a href="#pricing">Pricing</a></li>
           <li><a href="#faq">FAQ</a></li>
         </ul>
@@ -48,9 +49,12 @@
       </nav>
 
       <!-- Wire these to your Django routes -->
-      <div class="d-flex gap-2">
-        <a class="btn btn-outline-secondary" href="/accounts/login/">Log in</a>
-        <a class="btn-getstarted" href="/accounts/signup/">Start Free</a>
+      <div class="d-flex flex-column flex-sm-row gap-2 align-items-sm-center">
+        <a class="btn btn-link p-0 beta-support" href="mailto:hello@snippetter.io">Have questions? Email hello@snippetter.io</a>
+        <div class="d-flex gap-2">
+          <a class="btn btn-outline-secondary" href="/accounts/login/">Log in</a>
+          <a class="btn-getstarted" href="/accounts/signup/">Start Free</a>
+        </div>
       </div>
     </div>
   </header>
@@ -66,8 +70,9 @@
                 <i class="bi bi-graph-up-arrow"></i>
                 <span>Boost organic CTR with A/B tests</span>
               </div>
+              <p class="hero-status" data-aos="fade-down" data-aos-delay="260">Beta — currently onboarding early adopters.</p>
               <h1 class="hero-title" data-aos="fade-up" data-aos-delay="300">
-                A/B Test Your SEO Titles & Meta Descriptions
+                A/B Test Your SEO Titles &amp; Meta Descriptions
               </h1>
               <p class="hero-description" data-aos="fade-up" data-aos-delay="350">
                 Create variants, schedule runs, and track daily impressions, clicks, CTR and position directly from Google Search Console. No code changes to your layout required.
@@ -75,28 +80,30 @@
               <div class="hero-actions" data-aos="fade-up" data-aos-delay="400">
                 <a href="/accounts/signup/" class="btn-primary">Start Free</a>
                 <a href="#how" class="btn-outline">See how it works</a>
+                <a href="mailto:hello@snippetter.io?subject=Snippet%20Tester%20Walkthrough" class="btn-soft">Book a walkthrough</a>
               </div>
+              <p class="hero-support" data-aos="fade-up" data-aos-delay="420">Prefer email? Reach me directly at <a href="mailto:hello@snippetter.io">hello@snippetter.io</a>.</p>
 
               <div class="hero-metrics" data-aos="fade-up" data-aos-delay="500">
                 <div class="metric-item">
-                  <div class="metric-icon"><i class="bi bi-rocket-takeoff"></i></div>
+                  <div class="metric-icon"><i class="bi bi-calendar-event"></i></div>
                   <div class="metric-content">
                     <span class="metric-number">14-day</span>
                     <span class="metric-label">default run</span>
                   </div>
                 </div>
                 <div class="metric-item">
-                  <div class="metric-icon"><i class="bi bi-hdd-network"></i></div>
+                  <div class="metric-icon"><i class="bi bi-people"></i></div>
                   <div class="metric-content">
-                    <span class="metric-number">GSC</span>
-                    <span class="metric-label">native sync</span>
+                    <span class="metric-number">12 sites</span>
+                    <span class="metric-label">already testing</span>
                   </div>
                 </div>
                 <div class="metric-item">
                   <div class="metric-icon"><i class="bi bi-shield-check"></i></div>
                   <div class="metric-content">
-                    <span class="metric-number">No overlap</span>
-                    <span class="metric-label">guarantee</span>
+                    <span class="metric-number">Founder-led</span>
+                    <span class="metric-label">support</span>
                   </div>
                 </div>
               </div>
@@ -108,13 +115,13 @@
     </section>
 
     <!-- How it works -->
-    <section id="how" class="features section">
+    <section id="how" class="features section alt-background">
       <div class="container section-title" data-aos="fade-up">
         <h2>How it works</h2>
         <p>From connection to insights in five minutes.</p>
       </div>
       <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="row align-items-center gy-4">
+        <div class="row align-items-center gy-5">
           <div class="col-lg-6">
             <ol class="list-group list-group-numbered shadow-sm">
               <li class="list-group-item py-3">
@@ -124,7 +131,7 @@
                 <strong>Add a Page</strong> — paste the canonical URL you want to optimize.
               </li>
               <li class="list-group-item py-3">
-                <strong>Create Snippet Variants (A/B/C)</strong> — titles & meta descriptions.
+                <strong>Create Snippet Variants (A/B/C)</strong> — titles &amp; meta descriptions.
               </li>
               <li class="list-group-item py-3">
                 <strong>Schedule Variant Runs</strong> — set start dates and durations (no overlaps).
@@ -133,94 +140,146 @@
                 <strong>Track Daily Results</strong> — impressions, clicks, CTR, position per run.
               </li>
             </ol>
-            <div class="mt-4 d-flex gap-2">
+            <div class="mt-4 d-flex flex-wrap gap-2 align-items-center">
               <a href="/accounts/signup/" class="btn btn-primary">Start Free</a>
-              <a href="/dashboard/" class="btn btn-outline-secondary">View Demo Dashboard</a>
+              <a href="#demo-preview" class="btn btn-outline-secondary" aria-disabled="true" title="Demo video coming soon" role="button">View Demo Dashboard</a>
+              <span class="coming-soon-note">Demo walkthrough video coming soon — join the waitlist for first access.</span>
             </div>
           </div>
           <div class="col-lg-6" data-aos="fade-left" data-aos-delay="150">
-            <img src="assets/img/features/features-4.webp" alt="Dashboard preview" class="img-fluid rounded shadow-sm">
+            <div class="how-steps-visuals">
+              <div class="how-step-card">
+                <img src="assets/img/misc/how-connect.svg" alt="Connect Search Console" class="img-fluid rounded">
+                <div class="how-step-text">
+                  <h5>Secure Search Console connection</h5>
+                  <p>Read-only OAuth scopes keep your data safe while unlocking verified metrics.</p>
+                </div>
+              </div>
+              <div class="how-step-card">
+                <img src="assets/img/misc/how-plan.svg" alt="Plan variant runs" class="img-fluid rounded">
+                <div class="how-step-text">
+                  <h5>Plan your variant rotation</h5>
+                  <p>Auto-generate run dates or drag to reschedule—no overlapping windows allowed.</p>
+                </div>
+              </div>
+              <div class="how-step-card">
+                <img src="assets/img/misc/how-report.svg" alt="Report on performance" class="img-fluid rounded">
+                <div class="how-step-text">
+                  <h5>Share clean, visual reports</h5>
+                  <p>Highlight winning snippets with CTR deltas and export-ready charts for clients.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonial -->
+    <section id="testimonial" class="section testimonial">
+      <div class="container" data-aos="fade-up" data-aos-delay="120">
+        <div class="testimonial-card">
+          <div class="quote-icon"><i class="bi bi-chat-quote"></i></div>
+          <blockquote>
+            “I built Snippet Tester after running dozens of manual experiments across my client portfolio. Early adopters get direct founder support and help shape the roadmap.”
+          </blockquote>
+          <div class="testimonial-author">
+            <img src="assets/img/person/person-m-14.webp" alt="Founder portrait" class="author-avatar">
+            <div>
+              <h6>Alex Carter</h6>
+              <p class="mb-0">Founder &amp; SEO consultant</p>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
     <!-- Product Features -->
-<!-- Features Section (Simplified) -->
-<section id="features" class="features section">
-  <div class="container section-title" data-aos="fade-up">
-    <h2>Features</h2>
-    <p>Everything you need to A/B test SEO snippets—nothing you don’t.</p>
-  </div>
-
-  <div class="container" data-aos="fade-up" data-aos-delay="100">
-    <div class="row g-4">
-
-      <div class="col-12 col-md-6 col-lg-4">
-        <div class="feature-item h-100 p-4 border rounded-3">
-          <div class="feature-icon mb-2"><i class="bi bi-diagram-3"></i></div>
-          <h4 class="mb-1">Clean Model</h4>
-          <p class="mb-0 text-muted">Page → Test → Variant → Run. Easy to reason about, easy to manage.</p>
-        </div>
+    <section id="features" class="features section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Features</h2>
+        <p>Everything you need to plan, run, and evaluate snippet tests.</p>
       </div>
 
-      <div class="col-12 col-md-6 col-lg-4">
-        <div class="feature-item h-100 p-4 border rounded-3">
-          <div class="feature-icon mb-2"><i class="bi bi-clock-history"></i></div>
-          <h4 class="mb-1">Auto Scheduling</h4>
-          <p class="mb-0 text-muted">Generate A→B→C sequences with default 14-day windows—or set your own.</p>
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row g-4">
+          <div class="col-12 col-lg-4">
+            <div class="feature-group h-100">
+              <h4>Plan tests</h4>
+              <p>Structure experiments in minutes so you can focus on writing better copy.</p>
+              <ul class="feature-list">
+                <li><i class="bi bi-diagram-3"></i> Clean Page → Test → Variant → Run model</li>
+                <li><i class="bi bi-list-check"></i> Checklists to ensure baseline data before launch</li>
+                <li><i class="bi bi-calendar2-week"></i> Suggested schedules based on your traffic levels</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4">
+            <div class="feature-group h-100">
+              <h4>Run experiments</h4>
+              <p>Keep control of variant timing and data integrity while tests run.</p>
+              <ul class="feature-list">
+                <li><i class="bi bi-clock-history"></i> Auto sequencing for A→B→C rotations</li>
+                <li><i class="bi bi-intersect"></i> Guardrails to prevent overlapping runs</li>
+                <li><i class="bi bi-google"></i> Native Google Search Console sync every morning</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4">
+            <div class="feature-group h-100">
+              <h4>Report results</h4>
+              <p>Surface wins quickly and package them for stakeholders.</p>
+              <ul class="feature-list">
+                <li><i class="bi bi-bar-chart-line"></i> Variant comparisons on CTR, clicks, and position</li>
+                <li><i class="bi bi-filetype-csv"></i> CSV export for deeper analysis <span class="badge-coming-soon">Beta</span></li>
+                <li><i class="bi bi-people"></i> Client-ready summaries and annotations</li>
+              </ul>
+            </div>
+          </div>
         </div>
-      </div>
 
-      <div class="col-12 col-md-6 col-lg-4">
-        <div class="feature-item h-100 p-4 border rounded-3">
-          <div class="feature-icon mb-2"><i class="bi bi-google"></i></div>
-          <h4 class="mb-1">GSC Sync</h4>
-          <p class="mb-0 text-muted">Daily impressions, clicks, CTR & position—pulled straight from Search Console.</p>
-        </div>
-      </div>
-
-      <div class="col-12 col-md-6 col-lg-4">
-        <div class="feature-item h-100 p-4 border rounded-3">
-          <div class="feature-icon mb-2"><i class="bi bi-intersect"></i></div>
-          <h4 class="mb-1">No Overlaps</h4>
-          <p class="mb-0 text-muted">Built-in validation prevents clashing run windows (planned vs actual).</p>
-        </div>
-      </div>
-
-      <div class="col-12 col-md-6 col-lg-4">
-        <div class="feature-item h-100 p-4 border rounded-3">
-          <div class="feature-icon mb-2"><i class="bi bi-bar-chart-line"></i></div>
-          <h4 class="mb-1">Actionable Reports</h4>
-          <p class="mb-0 text-muted">Compare variants by CTR & position. Export CSV for clients or deep dives.</p>
-        </div>
-      </div>
-
-      <div class="col-12 col-md-6 col-lg-4">
-        <div class="feature-item h-100 p-4 border rounded-3">
-          <div class="feature-icon mb-2"><i class="bi bi-plugin"></i></div>
-          <h4 class="mb-1">CMS-Friendly</h4>
-          <p class="mb-0 text-muted">Works alongside WordPress, Webflow, or headless—no theme rebuilds.</p>
-        </div>
-      </div>
-
-    </div>
-
-    <!-- Small reassurance strip -->
-    <div class="row mt-4">
-      <div class="col">
-        <div class="d-flex flex-wrap gap-2">
+        <div class="reassurance-strip mt-5">
           <span class="badge rounded-pill bg-light text-dark border">Read-only GSC access</span>
-          <span class="badge rounded-pill bg-light text-dark border">Fast setup</span>
+          <span class="badge rounded-pill bg-light text-dark border">Fast onboarding</span>
           <span class="badge rounded-pill bg-light text-dark border">Solo-founder friendly</span>
         </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
+
+    <!-- Roadmap -->
+    <section id="roadmap" class="section light-background">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>What’s next</h2>
+        <p>Transparent roadmap so you know what’s shipping soon.</p>
+      </div>
+      <div class="container" data-aos="fade-up" data-aos-delay="120">
+        <div class="roadmap-grid">
+          <div class="roadmap-item">
+            <div class="roadmap-status in-progress">In Progress</div>
+            <h5>Automated change reminders</h5>
+            <p>Weekly nudges that flag when it’s time to rotate variants inside your CMS.</p>
+          </div>
+          <div class="roadmap-item">
+            <div class="roadmap-status in-progress">In Progress</div>
+            <h5>CSV export polish</h5>
+            <p>Cleaner column headers and pre-built Looker Studio template for agencies.</p>
+          </div>
+          <div class="roadmap-item">
+            <div class="roadmap-status planned">Planned</div>
+            <h5>Multi-seat workspaces</h5>
+            <p>Invite copywriters and analysts with role-based permissions.</p>
+          </div>
+          <div class="roadmap-item">
+            <div class="roadmap-status planned">Planned</div>
+            <h5>Slack + email digests</h5>
+            <p>Automated experiment summaries delivered to your team channels.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- Pricing -->
-    <section id="pricing" class="pricing section">
+    <section id="pricing" class="pricing section alt-background">
       <div class="container section-title" data-aos="fade-up">
         <h2>Pricing</h2>
         <p>Simple plans that scale with your sites.</p>
@@ -244,8 +303,8 @@
                   <li><i class="bi bi-check-circle-fill"></i> 1 property</li>
                   <li><i class="bi bi-check-circle-fill"></i> 1 active test</li>
                   <li><i class="bi bi-check-circle-fill"></i> Daily GSC sync</li>
-                  <li class="disabled"><i class="bi bi-x-circle-fill"></i> CSV export</li>
-                  <li class="disabled"><i class="bi bi-x-circle-fill"></i> Team seats</li>
+                  <li class="disabled"><i class="bi bi-x-circle-fill"></i> CSV export <span class="coming-soon-tag">Coming soon</span></li>
+                  <li class="disabled"><i class="bi bi-x-circle-fill"></i> Team seats <span class="coming-soon-tag">Coming soon</span></li>
                 </ul>
               </div>
               <div class="plan-cta">
@@ -260,7 +319,7 @@
               <div class="plan-header">
                 <div class="plan-icon"><i class="bi bi-briefcase"></i></div>
                 <h3>Pro</h3>
-                <p>For growing sites & agencies</p>
+                <p>For growing sites &amp; agencies</p>
               </div>
               <div class="plan-pricing">
                 <div class="price">
@@ -272,8 +331,8 @@
                   <li><i class="bi bi-check-circle-fill"></i> 3 properties</li>
                   <li><i class="bi bi-check-circle-fill"></i> 10 active tests</li>
                   <li><i class="bi bi-check-circle-fill"></i> Auto scheduling</li>
-                  <li><i class="bi bi-check-circle-fill"></i> CSV export</li>
-                  <li class="disabled"><i class="bi bi-x-circle-fill"></i> Multi-user</li>
+                  <li><i class="bi bi-check-circle-fill"></i> CSV export <span class="coming-soon-tag">Polish in progress</span></li>
+                  <li class="disabled"><i class="bi bi-x-circle-fill"></i> Multi-user <span class="coming-soon-tag">Planned</span></li>
                 </ul>
               </div>
               <div class="plan-cta">
@@ -298,7 +357,7 @@
                 <ul>
                   <li><i class="bi bi-check-circle-fill"></i> 10 properties</li>
                   <li><i class="bi bi-check-circle-fill"></i> Unlimited tests</li>
-                  <li><i class="bi bi-check-circle-fill"></i> Team seats</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Team seats <span class="coming-soon-tag">Planned</span></li>
                   <li><i class="bi bi-check-circle-fill"></i> Client-ready reports</li>
                   <li><i class="bi bi-check-circle-fill"></i> Priority support</li>
                 </ul>
@@ -378,6 +437,18 @@
                 </div>
               </div>
 
+              <div class="faq-item" data-aos="fade-up" data-aos-delay="400">
+                <div class="question-wrapper">
+                  <div class="icon-wrapper"><i class="bi bi-patch-question"></i></div>
+                  <div class="content-wrapper">
+                    <h3 class="question">What’s on the roadmap?</h3>
+                    <div class="answer">
+                      <p>Check the roadmap above for in-progress and planned items. Missing something critical? Email <a href="mailto:hello@snippetter.io">hello@snippetter.io</a>—beta users help prioritize what ships next.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
             </div> <!-- /faq-container -->
           </div>
         </div>
@@ -392,7 +463,8 @@
       </div>
       <div class="container text-center" data-aos="fade-up" data-aos-delay="150">
         <a class="btn btn-primary btn-lg" href="/accounts/signup/">Start Free</a>
-        <a class="btn btn-outline-secondary btn-lg ms-2" href="/dashboard/">View Demo</a>
+        <a class="btn btn-outline-secondary btn-lg ms-2" href="mailto:hello@snippetter.io">Email the founder</a>
+        <p class="mt-3 text-muted">Prefer a guided tour? <a href="mailto:hello@snippetter.io?subject=Snippet%20Tester%20Walkthrough">Book a walkthrough</a> or follow progress on <a href="https://twitter.com/snippetter" target="_blank" rel="noopener">Twitter</a>.</p>
       </div>
     </section>
   </main>
@@ -406,9 +478,13 @@
               <a href="/" class="logo d-flex align-items-center mb-4">
                 <span class="sitename">Snippet&nbsp;Tester</span>
               </a>
-              <p class="brand-description">A/B test your SEO snippets and make evidence-based changes using real GSC data.</p>
+              <p class="brand-description">A/B test your SEO snippets and make evidence-based changes using real GSC data. Currently in private beta—reach out if you want in.</p>
               <div class="contact-info mt-4">
                 <div class="contact-item"><i class="bi bi-envelope"></i><span>hello@snippetter.io</span></div>
+              </div>
+              <div class="footer-social mt-3">
+                <a href="https://twitter.com/snippetter" target="_blank" rel="noopener" aria-label="Twitter"><i class="bi bi-twitter"></i></a>
+                <a href="https://discord.gg/snippetter" target="_blank" rel="noopener" aria-label="Discord"><i class="bi bi-discord"></i></a>
               </div>
             </div>
           </div>
@@ -421,8 +497,8 @@
                     <nav class="footer-nav">
                       <a href="#how">How it works</a>
                       <a href="#features">Features</a>
+                      <a href="#roadmap">Roadmap</a>
                       <a href="#pricing">Pricing</a>
-                      <a href="/changelog/">Changelog</a>
                     </nav>
                   </div>
                 </div>
@@ -454,7 +530,8 @@
                     <nav class="footer-nav">
                       <a href="/accounts/login/">Log in</a>
                       <a href="/accounts/signup/">Create account</a>
-                      <a href="/dashboard/">Dashboard</a>
+                      <a href="mailto:hello@snippetter.io?subject=Snippet%20Tester%20Walkthrough">Book a walkthrough</a>
+                      <a href="#roadmap">Public roadmap</a>
                     </nav>
                   </div>
                 </div>
