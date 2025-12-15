@@ -48,7 +48,7 @@
       </nav>
 
       <div class="d-flex flex-column flex-sm-row gap-2 align-items-sm-center">
-        <a class="btn btn-link p-0 beta-support" href="mailto:hello@snippetter.io">Have questions? Email hello@snippetter.io</a>
+        <a class="btn btn-link p-0 beta-support" href="mailto:hello@snippettester.com">Have questions? Email hello@snippettester.com</a>
         <div class="d-flex gap-2">
           <a class="btn btn-outline-secondary" href="/accounts/login/">Log in</a>
           <a class="btn-getstarted" href="/accounts/signup/">Start Free</a>
@@ -65,7 +65,7 @@
             <div class="articles-hero-content">
               <div class="badge text-uppercase">SEO resources</div>
               <h1>Articles &amp; playbooks for improving organic CTR</h1>
-              <p class="lead">Curated guidance for running snippet tests, aligning them with your roadmap, and communicating wins to stakeholders. Fresh articles will roll out here soon.</p>
+              <p class="lead">Curated guidance for running snippet tests in Google Search Console, aligning them with your roadmap, and communicating wins to stakeholders. Fresh walkthroughs are ready below.</p>
               <div class="articles-hero-meta">
                 <div class="meta-item"><i class="bi bi-lightning-charge"></i><span>Actionable walkthroughs</span></div>
                 <div class="meta-item"><i class="bi bi-bar-chart"></i><span>GSC-backed insights</span></div>
@@ -79,8 +79,8 @@
 
     <section class="articles-list section light-background">
       <div class="container section-title" data-aos="fade-up" data-aos-delay="100">
-        <h2>Article previews</h2>
-        <p>Save this page to revisit upcoming guides. We added a dummy article so you can see how content will look.</p>
+        <h2>Featured articles</h2>
+        <p>Five SEO-focused playbooks on running A/B snippet tests, informed by real GSC workflows and rollout checklists.</p>
       </div>
 
       <div class="container" data-aos="fade-up" data-aos-delay="160">
@@ -88,38 +88,115 @@
           <article class="article-card">
             <div class="article-meta">
               <span class="pill">Playbook</span>
-              <span class="pill neutral">6 min read</span>
-              <span class="pill muted">Preview</span>
+              <span class="pill neutral">8 min read</span>
+              <span class="pill muted">Updated weekly</span>
             </div>
-            <h3>Dummy article: How to A/B test title tags for an ecommerce category page</h3>
-            <p class="article-excerpt">Walk through setting up two title variants, scheduling runs without overlap, and reading CTR deltas inside Snippet Tester before rolling the winner out to production.</p>
+            <h3>How to run A/B snippet tests in Google Search Console</h3>
+            <p class="article-excerpt">Step-by-step setup for creating control vs. variant groups, verifying coverage, and wiring results into Snippet Tester for clean CTR deltas.</p>
             <ul class="article-highlights">
-              <li><i class="bi bi-check-circle"></i> Variant ideas for intent-driven keywords</li>
-              <li><i class="bi bi-check-circle"></i> Guardrails to keep run windows clean</li>
-              <li><i class="bi bi-check-circle"></i> Reporting template for stakeholders</li>
+              <li><i class="bi bi-check-circle"></i> Map URL patterns to experiments without overlap</li>
+              <li><i class="bi bi-check-circle"></i> Validate impressions before locking a test window</li>
+              <li><i class="bi bi-check-circle"></i> Push data to dashboards stakeholders actually read</li>
             </ul>
             <div class="article-footer">
               <div class="tag-group">
-                <span class="tag">Title testing</span>
-                <span class="tag">Ecommerce</span>
+                <span class="tag">Google Search Console</span>
+                <span class="tag">Experiment design</span>
                 <span class="tag">CTR uplift</span>
               </div>
-              <a class="article-link" href="article-detail.html">Read the dummy article</a>
-              <a class="article-link" href="#" aria-disabled="true">Full article coming soon</a>
+              <a class="article-link" href="article-detail.html#article-run-gsc-tests">Read the article</a>
             </div>
           </article>
 
-          <article class="article-card subdued">
+          <article class="article-card">
             <div class="article-meta">
-              <span class="pill">Content queue</span>
-              <span class="pill neutral">Planned</span>
+              <span class="pill">Framework</span>
+              <span class="pill neutral">6 min read</span>
+              <span class="pill muted">New</span>
             </div>
-            <h3>More topics on deck</h3>
-            <p class="article-excerpt">Expect walkthroughs for meta description tests, multi-variant rotations, and post-test change management. Email <a href="mailto:hello@snippetter.io">hello@snippetter.io</a> if you want to request a guide.</p>
-            <div class="queue-list">
-              <div class="queue-item"><i class="bi bi-journal-richtext"></i><span>Framework: deciding when to stop a run</span></div>
-              <div class="queue-item"><i class="bi bi-calendar-event"></i><span>Scheduling tests around seasonality</span></div>
-              <div class="queue-item"><i class="bi bi-people"></i><span>Sharing test plans with clients</span></div>
+            <h3>Designing clean control vs. variant groups</h3>
+            <p class="article-excerpt">Learn how to build statistically fair buckets for snippets, including canonical checks, robots.txt safeguards, and query matching rules.</p>
+            <ul class="article-highlights">
+              <li><i class="bi bi-check-circle"></i> Patterns for product, category, and blog URLs</li>
+              <li><i class="bi bi-check-circle"></i> How to isolate schema and copy changes</li>
+              <li><i class="bi bi-check-circle"></i> Monitoring cannibalization during tests</li>
+            </ul>
+            <div class="article-footer">
+              <div class="tag-group">
+                <span class="tag">Test design</span>
+                <span class="tag">URL strategy</span>
+                <span class="tag">Quality control</span>
+              </div>
+              <a class="article-link" href="article-detail.html#article-control-variant">Read the article</a>
+            </div>
+          </article>
+
+          <article class="article-card">
+            <div class="article-meta">
+              <span class="pill">Analysis</span>
+              <span class="pill neutral">7 min read</span>
+              <span class="pill muted">SEO data</span>
+            </div>
+            <h3>Reading GSC CTR deltas without seasonal noise</h3>
+            <p class="article-excerpt">Separate experiment lift from market swings using matched query groups, calendar controls, and view filters inside Snippet Tester.</p>
+            <ul class="article-highlights">
+              <li><i class="bi bi-check-circle"></i> Rolling averages vs. fixed windows</li>
+              <li><i class="bi bi-check-circle"></i> Query-level slices for intent changes</li>
+              <li><i class="bi bi-check-circle"></i> Reporting templates for exec updates</li>
+            </ul>
+            <div class="article-footer">
+              <div class="tag-group">
+                <span class="tag">Analysis</span>
+                <span class="tag">Seasonality</span>
+                <span class="tag">Reporting</span>
+              </div>
+              <a class="article-link" href="article-detail.html#article-ctr-deltas">Read the article</a>
+            </div>
+          </article>
+
+          <article class="article-card">
+            <div class="article-meta">
+              <span class="pill">Rollout</span>
+              <span class="pill neutral">5 min read</span>
+              <span class="pill muted">Stakeholders</span>
+            </div>
+            <h3>Rolling out snippet wins and documenting impact</h3>
+            <p class="article-excerpt">Turn experiment wins into production changes with changelog templates, engineering handoffs, and QA steps to keep gains sticky.</p>
+            <ul class="article-highlights">
+              <li><i class="bi bi-check-circle"></i> Ship logs for CMS and headless stacks</li>
+              <li><i class="bi bi-check-circle"></i> Guardrails for structured data updates</li>
+              <li><i class="bi bi-check-circle"></i> Proof-of-impact packets for leadership</li>
+            </ul>
+            <div class="article-footer">
+              <div class="tag-group">
+                <span class="tag">Change management</span>
+                <span class="tag">SEO ops</span>
+                <span class="tag">Reporting</span>
+              </div>
+              <a class="article-link" href="article-detail.html#article-rollout">Read the article</a>
+            </div>
+          </article>
+
+          <article class="article-card">
+            <div class="article-meta">
+              <span class="pill">Use case</span>
+              <span class="pill neutral">9 min read</span>
+              <span class="pill muted">GSC tactics</span>
+            </div>
+            <h3>Snippet testing for product, feature, and pricing pages</h3>
+            <p class="article-excerpt">Use GSC data to tailor snippets to commercial intent pages, balancing conversion cues with click-through boosts.</p>
+            <ul class="article-highlights">
+              <li><i class="bi bi-check-circle"></i> Variant ideas for feature, pricing, and comparison pages</li>
+              <li><i class="bi bi-check-circle"></i> Aligning CRO goals with organic CTR wins</li>
+              <li><i class="bi bi-check-circle"></i> Measuring second-order effects like bounce and scroll depth</li>
+            </ul>
+            <div class="article-footer">
+              <div class="tag-group">
+                <span class="tag">Product pages</span>
+                <span class="tag">CRO + SEO</span>
+                <span class="tag">Search Console</span>
+              </div>
+              <a class="article-link" href="article-detail.html#article-use-cases">Read the article</a>
             </div>
           </article>
         </div>
@@ -138,7 +215,7 @@
               </a>
               <p class="brand-description">A/B test your SEO snippets and make evidence-based changes using real GSC data. Currently in private beta—reach out if you want in.</p>
               <div class="contact-info mt-4">
-                <div class="contact-item"><i class="bi bi-envelope"></i><span>hello@snippetter.io</span></div>
+                <div class="contact-item"><i class="bi bi-envelope"></i><span>hello@snippettester.com</span></div>
               </div>
               <div class="footer-social mt-3">
                 <a href="https://twitter.com/snippetter" target="_blank" rel="noopener" aria-label="Twitter"><i class="bi bi-twitter"></i></a>
@@ -188,7 +265,7 @@
                     <nav class="footer-nav">
                       <a href="/accounts/login/">Log in</a>
                       <a href="/accounts/signup/">Create account</a>
-                      <a href="mailto:hello@snippetter.io?subject=Snippet%20Tester%20Walkthrough">Book a walkthrough</a>
+                      <a href="mailto:hello@snippettester.com?subject=Snippet%20Tester%20Walkthrough">Book a walkthrough</a>
                       <a href="index.html#roadmap">Public roadmap</a>
                     </nav>
                   </div>
